@@ -11,6 +11,12 @@ A simple web application to help participants find their assigned Christmas Frie
 
 ---
 
+## Live Site
+
+Check out the live site here: [Christmas Friend Website](https://christmas-friend-smoky.vercel.app/)  
+
+---
+
 ## Installation
 
 ### 1. Clone the Repository
