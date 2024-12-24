@@ -8,12 +8,15 @@ fetch("assignments.csv")
         const rows = data.split("\n").slice(1); // Skip the header row
         rows.forEach(row => {
             const cols = row.split(",");
-            assignments.push({
-                name: cols[0],
-                rollNumber: cols[1].trim().toLowerCase(), // Convert to lowercase
-                christmasFriend: cols[2],
-                friendRollNumber: cols[3]
-            });
+            if (cols.length >= 5) { // Ensure there are enough columns
+                assignments.push({
+                    year: cols[0].trim(),
+                    name: cols[1].trim(),
+                    rollNumber: cols[2].trim().toLowerCase(), // Convert to lowercase
+                    christmasFriend: cols[3].trim(),
+                    friendRollNumber: cols[4].trim()
+                });
+            }
         });
     })
     .catch(error => console.error("Error loading CSV:", error));

@@ -23,6 +23,13 @@ body {
     width: 100%;
     text-align: center;
 }
+/* Logo Styles */
+.logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add space below */
+}
 
 /* Header Styles */
 h1 {
